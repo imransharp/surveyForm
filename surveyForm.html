@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey to help us improve our services.</p>
+
+  <form id="survey-form">
+    <!-- Name Input -->
+    <label id="name-label" for="name">Your Name:</label>
+    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+    
+    <!-- Email Input -->
+    <label id="email-label" for="email">Your Email:</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    
+    <!-- Number Input -->
+    <label id="number-label" for="number">Your Age:</label>
+    <input id="number" type="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+    
+    <!-- Dropdown -->
+    <label for="dropdown">Select your country:</label>
+    <select id="dropdown" name="country">
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+    </select>
+    
+    <!-- Radio Buttons -->
+    <label>Do you like coding?</label>
+    <input type="radio" id="yes" name="coding" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="coding" value="no">
+    <label for="no">No</label>
+
+    <!-- Checkboxes -->
+    <label>Select your hobbies:</label>
+    <input type="checkbox" id="coding-checkbox" name="hobbies" value="coding">
+    <label for="coding-checkbox">Coding</label>
+    <input type="checkbox" id="reading-checkbox" name="hobbies" value="reading">
+    <label for="reading-checkbox">Reading</label>
+    <input type="checkbox" id="traveling-checkbox" name="hobbies" value="traveling">
+    <label for="traveling-checkbox">Traveling</label>
+
+    <!-- Textarea for comments -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
